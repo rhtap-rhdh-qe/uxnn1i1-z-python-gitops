@@ -1,0 +1,6 @@
+apiVersion: "pipelinesascode.tekton.dev/v1alpha1"
+kind: Repository
+metadata:
+  name: uxnn1i1-z-python-gitops-repository
+spec:
+  url: https://github.com/rhtap-rhdh-qe/uxnn1i1-z-python-gitops

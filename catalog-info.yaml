@@ -1,0 +1,21 @@
+apiVersion: backstage.io/v1alpha1
+kind: Resource
+metadata:
+  name: uxnn1i1-z-python-gitops
+  description: This is GitOps manifest for uxnn1i1-z-python   
+  links:
+    - url: https://www.redhat.com/en/solutions/trusted-software-supply-chain
+      title: Trusted Secure Supply Chain 
+      icon: dashboard
+      type: admin-dashboard
+  annotations:    
+    argocd/app-name: uxnn1i1-z-python
+    janus-idp.io/tekton: uxnn1i1-z-python 
+    backstage.io/kubernetes-id: uxnn1i1-z-python 
+    backstage.io/techdocs-ref: dir:. 
+spec:
+  type: gitops
+  owner: user:guest 
+  lifecycle: experimental
+  dependsOn:
+    - component:uxnn1i1-z-python
